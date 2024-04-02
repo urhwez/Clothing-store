@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/charmonman</item>
+        <item>@font/david_libre_medium</item>
+        <item>@font/iceberg</item>
+        <item>@font/inika</item>
+        <item>@font/metal_mania</item>
+    </array>
+</resources>
