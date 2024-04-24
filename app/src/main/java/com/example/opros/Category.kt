@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Category(
-    @PrimaryKey (autoGenerate = true)
-    var id_category: Int? = 0,
+    @PrimaryKey (autoGenerate = false)
+    var id_category: Int,
     @ColumnInfo(name = "type")
     var type: String,
     @ColumnInfo(name = "category")
@@ -15,5 +15,5 @@ data class Category(
     @ColumnInfo(name = "subcategory")
     var subcategory: String,
     @ColumnInfo(name = "sex")
-    var sex: Boolean
+    var sex: Int
 )

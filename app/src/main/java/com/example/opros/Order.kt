@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey
     childColumns = ["user_id"],
     onDelete = androidx.room.ForeignKey.CASCADE,
     onUpdate = androidx.room.ForeignKey.CASCADE
-), ForeignKey( entity = com.example.opros.Users::class,
+), ForeignKey( entity = com.example.opros.Product::class,
     parentColumns = ["id_product"],
     childColumns = ["product_id"],
     onDelete = androidx.room.ForeignKey.CASCADE,

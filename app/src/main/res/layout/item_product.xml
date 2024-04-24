@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:background="@color/yellow">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageItem"
+                android:layout_width="188dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="131dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/imageItem"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textSubcategory"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPrice"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSubcategory"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+
+            <ImageButton
+                android:id="@+id/imageHome"
+                android:layout_width="46dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/imageItem"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textPrice"
+                android:background="@drawable/free_icon_font_shopping_cart_3916598" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -23,6 +23,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        kapt {
+            arguments {arg("room.schemaLocation", "$projectDir/schemas")}
+        }
     }
 
 
@@ -53,16 +56,22 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     val lifecycle_version = "2.7.0"
     val arch_version = "2.2.0"
     val room_version = "2.6.1"
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.7.0")
+
 
 
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
+    kapt ("androidx.room:room-compiler:2.5.0")
+    kapt ("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
 
     // To use Kotlin annotation processing tool (kapt)
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.github.javafaker:javafaker:1.0.2")
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
 
 
     // optional - Kotlin Extensions and Coroutines support for Room
@@ -87,6 +96,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

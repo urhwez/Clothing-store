@@ -19,11 +19,13 @@ data class Product(
     @ColumnInfo(name = "price")
     var price: Int,
     @ColumnInfo(name = "new_price")
-    var new_price: Int,
+    var new_price: Int?,
     @ColumnInfo(name = "material")
     var material: String,
     @ColumnInfo(name = "color")
     var color: String,
+    @ColumnInfo(name = "sex")
+    var sex: Int,
     @ColumnInfo(name = "product_category")
     var product_category: Int,
     @ColumnInfo(name = "status")

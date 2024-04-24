@@ -64,17 +64,40 @@
         android:id="@+id/imageWoman"
         android:layout_width="193dp"
         android:layout_height="255dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/woman"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageBasket" />
+
+    <ImageView
+        android:id="@+id/imageMan"
+        android:layout_width="193dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/man"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCatalog" />
+
+    <TextView
+        android:id="@+id/textMan"
+        android:layout_width="191dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center"
+        android:text="МУЖЧИНАМ"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMan" />
 
     <TextView
         android:id="@+id/textWoman"
         android:layout_width="191dp"
         android:layout_height="25dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/iceberg"
         android:gravity="center"
@@ -86,27 +109,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageWoman" />
 
     <ImageView
-        android:id="@+id/imageMan"
-        android:layout_width="193dp"
-        android:layout_height="255dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/man"
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCatalog" />
-
-    <TextView
-        android:id="@+id/textMan"
-        android:layout_width="191dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="center"
-        android:text="МУЖЧИНАМ"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMan" />
+        app:layout_constraintTop_toBottomOf="@+id/textMan"
+        tools:srcCompat="@tools:sample/avatars" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

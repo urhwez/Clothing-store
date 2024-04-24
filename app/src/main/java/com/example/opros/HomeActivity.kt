@@ -1,5 +1,6 @@
 package com.example.opros
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
@@ -27,6 +28,14 @@ class HomeActivity : AppCompatActivity() {
         val textMan: TextView = findViewById(R.id.textMan)
         val textWoman: TextView = findViewById(R.id.textWoman)
 
+        imageMan.setOnClickListener{
+            val intent = Intent(this, ItemsActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
+
+
+
 }
